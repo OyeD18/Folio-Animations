@@ -1,115 +1,138 @@
 <!DOCTYPE html>
-<html lang="eng-CA">
+<html lang="en-CA">
   <head>
     <meta charset="utf-8">
-    <title>3D Modelling</title>
-    <!-- Created by Dolapo Ajiboye on 08/12/2024 -->
+    <title>Animations</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Italianno&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@400;700&family=KoHo:wght@300;400&display=swap" rel="stylesheet">
     <style>
       body {
-        color: #000000;
-        background-color: #FDC56A;
-        margin: 0;
-        font-family: 'Indie Flower', cursive; 
+        color: #FFFFFF;
+        background-color: #8554D4;
+        background-position: center;
+        margin: 0px;
+        font-family: 'KoHo', sans-serif;
         text-align: center;
       }
 
       .wrapper {
-        background-color: #FFF4E3;
-        width: 92%;   
+        background-color: #000000;
+        width: 92%;
         max-width: 1200px;
-        margin: 20px auto;       
-        padding: 20px;           
-        border-radius: 10px; 
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        min-height: 2200px;
       }
 
-      .italianno {
-        font-family: 'Italianno', cursive;
-        font-size: 6em;
-        font-weight: 300;
-        margin: 20px 0;
+      .Kalnia {
+        font-family: 'Kalnia', serif;
+        font-size: 7em;
+        font-weight: 700;
+        margin: 0;
+        color: #8554D4;
+        position: relative;
+        text-align: center;
+      }
+
+      #nav {
+        clear: both;
+        padding: 0;
+        margin-bottom: 100px;
       }
 
       #nav ul {
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
+        border-top: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
         list-style: none;
-        margin: 0;
+        margin: 10;
         padding: 0;
         display: flex;
         justify-content: center;
-        background-color: #FFFFFF;
+        background-color: #000000;
       }
 
       #nav li {
-        margin: 0 20px;
+        margin: 0 10px;
       }
 
       #nav a {
         text-decoration: none;
-        color: #000000;
+        color: #FFFFFF;
         font-size: 1.2em;
-        padding: 10px 20px;
+        padding: 0px 50px;
         display: block;
         transition: color 0.3s ease;
       }
 
       #nav a:hover {
-        color: #FDC56A;
+        color: #8554D4;
       }
 
-      .image-container img {
-        width: 70%;
-        height: auto;
-        border: 2px solid #000;
-        border-radius: 5px;
+      .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+      }
+
+      .video-wrapper {
+        text-align: center;
+      }
+
+      .video-wrapper h2 {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        color: #FFFFFF;
+      }
+
+      .video-wrapper video {
+        width: 80%;
+        max-width: 800px;
+        border: 2px solid #FFFFFF;
+        border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        margin: 7px;
-      }
-
-      .image-container img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
-
       <div id="nav">
         <ul>
-          <li><a href="https://oyed18.github.io/The-Gallery/">Home</a></li>
-          <li><a href="https://oyed18.github.io/Gallery-Illustrations/">Illustrations</a></li>
-          <li><a href="https://oyed18.github.io/Gallery-UI-Design/">UI Design</a></li>
-          <li><a href="#">3D Modelling</a></li>
-          <li><a href="https://oyed18.github.io/Gallery-Animations/">Animations</a></li>
+          <li><a href="https://oyed18.github.io/Portfolio/">Home</a></li>
+          <li><a href="https://oyed18.github.io/Folio-Illustrations/">Illustrations</a></li>
+          <li><a href="#">Animations</a></li>
+          <li><a href="https://oyed18.github.io/Folio-3D/">3D Modelling</a></li>
+          <li><a href="#">Projects</a></li>
         </ul>
       </div>
 
       <div id="header">
-        <h1 class="italianno">3D Modelling</h1>
+        <h1 class="Kalnia">Animations</h1>
       </div>
 
-      <div class="blender-models">
-        <h2>Made on Blender</h2>
-        <div class="image-container">
-          <img src="fries.png" alt="3d1">
-          <img src="donuts.jpg" alt="3d2">
-          <img src="tea cup.png" alt="3d4">
-          <img src="petals.png" alt="3d5">
-          <img src="Flowers in a jar.png" alt="3d6">
-        </div>
-      </div>
-      
-      <div class="wip-models">
-        <h2>Works in progress</h2>
-        <div class="image-container">
-          <img src="msword.png" alt="3d3">
-          <img src="BMO.png" alt="3d7">
+      <div class="animation-videos">
+        <div class="video-container">
+          <div class="video-wrapper">
+            <h2>Walk Cycle</h2>
+            <video controls>
+              <source src="Walk Cycle.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-wrapper">
+            <h2>Maze</h2>
+            <video controls>
+              <source src="Maze.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-wrapper">
+            <h2>The Luddy</h2>
+            <video controls>
+              <source src="The Luddy.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
